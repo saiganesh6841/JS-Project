@@ -161,6 +161,10 @@ function updateTrack() {
         audio.play();
     }
 }
+audio.addEventListener('ended', function () {
+    // Automatically play the next track when the current track ends
+    nextTrack();
+});
 
     </script>
 </body>
